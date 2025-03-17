@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "UAT_DW_Cube", "UAT_DW_Cube\UAT_DW_Cube.dwproj", "{3C0484A3-A195-44F4-B744-A5539F268E82}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C0484A3-A195-44F4-B744-A5539F268E82}.Development|Default.ActiveCfg = Development
+		{3C0484A3-A195-44F4-B744-A5539F268E82}.Development|Default.Build.0 = Development
+		{3C0484A3-A195-44F4-B744-A5539F268E82}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {058BDB75-F35A-43E6-B53C-836A4FBBF46A}
+	EndGlobalSection
+EndGlobal

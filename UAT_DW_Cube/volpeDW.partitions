@@ -1,0 +1,285 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="405ce8aa-ff20-429f-88cf-7532ee50252d" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>volpeDW</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Vfactbudget</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="6e18b830-0746-457a-a773-04b7613059c1">
+          <ID>Vfactbudget</ID>
+          <Name>Vfactbudget</Name>
+          <CreatedTimestamp>2016-03-30T14:39:56.39Z</CreatedTimestamp>
+          <LastSchemaUpdate>2018-07-19T12:44:20.363333Z</LastSchemaUpdate>
+          <LastProcessed>2025-03-12T12:28:57.576667Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="0517d9be-36af-41f3-878f-d15adfc134df">
+            <DataSourceViewID>MS_Dwprod</DataSourceViewID>
+            <TableID>dbo_vfactbudget</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="306863ea-55d0-4b8b-b502-968f497e4cfd">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="cfdc48e1-d61e-4bb0-a43f-24c821fa4d2e" />
+          </ProactiveCaching>
+          <EstimatedSize>30125009</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>v Fact Cost Summary</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="7358336e-bbbb-4660-9a18-d10539fc88ea">
+          <ID>v Fact Cost Summary</ID>
+          <Name>v Fact Cost Summary</Name>
+          <CreatedTimestamp>2016-03-30T14:39:56.403333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2018-07-19T12:44:20.41Z</LastSchemaUpdate>
+          <LastProcessed>2025-03-12T12:29:14.936667Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="c36cbe3f-be6b-452a-834b-8f40c4baeac1">
+            <DataSourceViewID>MS_Dwprod</DataSourceViewID>
+            <TableID>dbo_vFactCostSummary</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="48cef0a7-8fd4-4cc9-b608-daf8e0922cdf">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="f857910b-6e18-4d95-9e25-f4b7fa194299" />
+          </ProactiveCaching>
+          <EstimatedSize>170690088</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>v Fact Yearend Summary</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="d58b0fe2-ae18-45ca-9873-34bc8c8e2a3c">
+          <ID>v Fact Yearend Summary</ID>
+          <Name>v Fact Yearend Summary</Name>
+          <CreatedTimestamp>2016-03-30T14:39:56.42Z</CreatedTimestamp>
+          <LastSchemaUpdate>2018-07-19T12:44:20.476667Z</LastSchemaUpdate>
+          <LastProcessed>2025-03-12T12:28:50.826667Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="af007769-750b-43f4-8c66-4c1fbb70dc3b">
+            <DataSourceViewID>MS_Dwprod</DataSourceViewID>
+            <TableID>dbo_vFactYearendSummary</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="877ceb3e-d433-4954-a4f8-983d6529aee3">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="47a636fd-8b91-44cf-b2b0-f4ed01279bd9" />
+          </ProactiveCaching>
+          <EstimatedSize>1602012</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>v Fact Funding</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="26ce64bd-470d-46ed-b9c4-64bda3926ae6">
+          <ID>v Fact Funding</ID>
+          <Name>v Fact Funding</Name>
+          <CreatedTimestamp>2016-03-30T14:39:56.436667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2018-07-19T12:44:20.54Z</LastSchemaUpdate>
+          <LastProcessed>2025-03-12T12:28:51.076667Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="5ae18dee-4594-4ec9-86ce-b3e8b8899dc1">
+            <DataSourceViewID>MS_Dwprod</DataSourceViewID>
+            <TableID>dbo_vFactFunding</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="5930efed-5721-4b8a-8f84-14a876509b2c">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="9ee15e6f-d649-4a46-a47f-23a3d8659dac" />
+          </ProactiveCaching>
+          <EstimatedSize>1167428</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>v Fact Fund Sum</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="5aee92b6-61a5-4028-bd50-d7f2cc91a265">
+          <ID>v Fact Fund Sum</ID>
+          <Name>v Fact Fund Sum</Name>
+          <CreatedTimestamp>2016-03-30T14:39:56.496667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2018-07-19T12:44:20.596667Z</LastSchemaUpdate>
+          <LastProcessed>2025-03-12T12:29:04.093333Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="239968b0-c98a-4ad3-a94d-9729e120035c">
+            <DataSourceViewID>MS_Dwprod</DataSourceViewID>
+            <TableID>dbo_vFactFundSum</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="2ec05190-d943-48cd-aa21-83a4156ebcf5">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="4ec67535-883e-49bd-933e-4e22f3e22409" />
+          </ProactiveCaching>
+          <EstimatedSize>43208686</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>v Fact Federal Labor</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="9ed810ed-3865-4177-9641-5a738ac92bae">
+          <ID>v Fact Federal Labor</ID>
+          <Name>v Fact Federal Labor</Name>
+          <CreatedTimestamp>2016-03-30T14:39:56.513333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2018-07-19T12:44:20.653333Z</LastSchemaUpdate>
+          <LastProcessed>2025-03-12T12:29:15.123333Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a21e17e5-afc7-4eb1-98b3-2fc819085690">
+            <DataSourceViewID>MS_Dwprod</DataSourceViewID>
+            <TableID>dbo_vFactFederalLabor</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="b2c11f65-6a04-4b84-8aac-ada16a08fd6e">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="8ee0a61e-823b-44b9-9312-1f2985416a4c" />
+          </ProactiveCaching>
+          <EstimatedSize>195145136</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Dim Goal Bridge</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="c997a003-6378-4df7-b979-7590a56041d2">
+          <ID>Dim Goal Bridge</ID>
+          <Name>Dim Goal Bridge</Name>
+          <CreatedTimestamp>2016-03-30T14:39:56.53Z</CreatedTimestamp>
+          <LastSchemaUpdate>2018-07-19T12:44:20.7Z</LastSchemaUpdate>
+          <LastProcessed>2025-03-12T12:28:49.733333Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="88699738-b01b-48d0-97ac-71be89649608">
+            <DataSourceViewID>MS_Dwprod</DataSourceViewID>
+            <TableID>dbo_dimGoalBridge</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="7349bcf6-9d2d-4eae-bf20-f2d266768d6b">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="7bf1e33a-82fb-40a0-8845-7992ab2f66ef" />
+          </ProactiveCaching>
+          <EstimatedSize>162513</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>V Fact Library Docs</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="6deb0d21-9890-4b40-89fc-994695de94d9">
+          <ID>V Fact Library Docs</ID>
+          <Name>V Fact Library Docs</Name>
+          <CreatedTimestamp>2016-03-30T14:39:56.546667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2018-07-19T12:44:20.743333Z</LastSchemaUpdate>
+          <LastProcessed>2025-03-12T12:28:49.826667Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="df0524a0-094e-41f1-825a-a1ecc34aabcb">
+            <DataSourceViewID>MS_Dwprod</DataSourceViewID>
+            <TableID>dbo_VFactLibraryDocs</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="d009ccc4-dd2d-48e2-8876-7df48d629899">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="37dc603a-8427-4aa6-ba0c-4b8d71efb1c7" />
+          </ProactiveCaching>
+          <EstimatedSize>9562</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Vdimlibrary Bridge</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="6cbee861-5a80-4f48-9537-98b6c187dbdf">
+          <ID>Vdimlibrary Bridge</ID>
+          <Name>Vdimlibrary Bridge</Name>
+          <CreatedTimestamp>2016-03-30T14:39:56.56Z</CreatedTimestamp>
+          <LastSchemaUpdate>2018-07-19T12:44:20.776667Z</LastSchemaUpdate>
+          <LastProcessed>2025-03-12T12:28:50.203333Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="39559fc0-6334-45c1-ba2f-c99b6195d63e">
+            <DataSourceViewID>MS_Dwprod</DataSourceViewID>
+            <TableID>dbo_vdimlibraryBridge</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="a534c20e-aa2b-4182-80bc-d59072590585">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="91066f47-cd1a-4bb2-a16a-a5a9c148d17f" />
+          </ProactiveCaching>
+          <EstimatedSize>118653</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>v Fact Contracts</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="ca9bea07-85bf-4dfa-9e38-59e4213cb8c3">
+          <ID>v Fact Contracts</ID>
+          <Name>v Fact Contracts</Name>
+          <CreatedTimestamp>2017-12-20T19:48:29.09Z</CreatedTimestamp>
+          <LastSchemaUpdate>2018-07-19T12:44:20.82Z</LastSchemaUpdate>
+          <LastProcessed>2025-03-12T12:28:49.576667Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="06cbff1c-02fc-4801-a687-e041bf097d31">
+            <DataSourceViewID>MS_Dwprod</DataSourceViewID>
+            <TableID>dw_vFactContracts</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="195fa9ba-ca24-4f08-9663-6914556666e9">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="14066d04-29f4-4d4c-abbc-923f5a3e4015" />
+          </ProactiveCaching>
+          <EstimatedSize>2872</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>
